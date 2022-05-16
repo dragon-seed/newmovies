@@ -10,7 +10,7 @@ const TitleInfo = (props) => {
 let params = useParams();
 
 
-//this returns an array with one object inside of it 
+//this returns an array with one object inside of it (the movie that was clicked on)
 let selectedMovie = props.movie.filter((item) => {
     return item.id === params.movieid
 })[0]
@@ -27,6 +27,10 @@ return (
        <h1>{selectedMovie.fullTitle}</h1> 
        <img src={selectedMovie.image}/>
        <p>{selectedMovie.plot}</p>
+       <p>Genre: {selectedMovie.genres}</p>
+       <p>Runtime: {selectedMovie.runtimeStr}</p>
+       <p>Rating: {selectedMovie.contentRating}</p>
+       <p>MetaCritic Rating:  {selectedMovie.metacriticRating}</p>
     </div>
 )
 

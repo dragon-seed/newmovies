@@ -28,7 +28,9 @@ useEffect(() => {
       <nav>
         <ul>
           <li><Link to="/">New Releases</Link></li>
-          <li><Link to="/watchlist">Watchlist</Link></li>
+          <li><Link to="/watchlist">My Watchlist</Link></li>
+          <li><Link to ="/genre">Releases by Genre</Link></li>
+          <li><Link to ="/acclaimed">Critically Acclaimed</Link></li>
         </ul>
       </nav>
       <main>
