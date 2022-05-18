@@ -30,6 +30,7 @@ return (
        <p>Genre: {selectedMovie.genres}</p>
        <p>Runtime: {selectedMovie.runtimeStr}</p>
        <p>Rating: {selectedMovie.contentRating}</p>
+       <p>Release Date: {selectedMovie.releaseState}</p>
        <p>MetaCritic Rating:  {selectedMovie.metacriticRating}</p>
     </div>
 )

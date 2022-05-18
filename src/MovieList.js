@@ -13,8 +13,8 @@ if (props.movie) {
    displayedResults = props.movie.map((item) => {
         return (
         <div>
-        <li><Link to={'/' + item.id}>{item.fullTitle}</Link></li>        
         <li><Link to={'/' + item.id}><img src={item.image}/></Link></li>
+        <li><Link to={'/' + item.id}>{item.fullTitle}</Link></li>        
         </div>
         )}
     ) 

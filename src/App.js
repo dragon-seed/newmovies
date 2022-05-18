@@ -4,6 +4,10 @@ import React, {useEffect, useState} from 'react'
 import MovieList from './MovieList'
 import { Link, Routes, Route, Navigate } from 'react-router-dom';
 import TitleInfo from './TitleInfo'
+import AcclaimedList from './AcclaimedList'
+import GenreList from './GenreList'
+import Genre from './Genre'
+import Drama from'./Drama'
 
 function App() {
 
@@ -29,7 +33,7 @@ useEffect(() => {
         <ul>
           <li><Link to="/">New Releases</Link></li>
           <li><Link to="/watchlist">My Watchlist</Link></li>
-          <li><Link to ="/genre">Releases by Genre</Link></li>
+          <li><Link to ="/genrelist">Releases by Genre</Link></li>
           <li><Link to ="/acclaimed">Critically Acclaimed</Link></li>
         </ul>
       </nav>
@@ -37,6 +41,9 @@ useEffect(() => {
       <Routes>
         <Route path="/" element={<MovieList movie={movie}/>}/>
         <Route path='/:movieid' element={<TitleInfo movie={movie} />}/>
+        <Route path="/genrelist" element={<GenreList movie={movie} />}/>
+        <Route path="/drama" element={<Drama movie={movie} />}/>
+        {/* <Route path="/genreList/:movieid" element={<Genre movie={movie} />} /> */}
       </Routes>
       </main>
     </div>
