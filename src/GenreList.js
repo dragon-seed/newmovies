@@ -18,11 +18,13 @@ return (
     <li><Link to={'/comedy'}>Comedy</Link></li>
     <li><Link to={'/documentary'}>Documentary</Link></li>
     <li><Link to={'/drama'}>Drama</Link></li>
+    <li><Link to={'/history'}>History</Link></li>
     <li><Link to={'/horror'}>Horror</Link></li>
     <li><Link to={'/musical'}>Musical</Link></li>
     <li><Link to={'/romance'}>Romance</Link></li>
     <li><Link to={'/scifi'}>Sci-Fi</Link></li>
-    <li><Link to={'/thriller'}>Drama</Link></li>
+    <li><Link to={'/thriller'}>Thriller</Link></li>
+    <li><Link to={'/war'}>War</Link></li>
 </div>
     
 )

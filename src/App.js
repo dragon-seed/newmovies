@@ -43,7 +43,6 @@ useEffect(() => {
         <Route path='/:movieid' element={<TitleInfo movie={movie} />}/>
         <Route path="/genrelist" element={<GenreList movie={movie} />}/>
         <Route path="/drama" element={<Drama movie={movie} />}/>
-        {/* <Route path="/genreList/:movieid" element={<Genre movie={movie} />} /> */}
       </Routes>
       </main>
     </div>
