@@ -6,11 +6,11 @@ const MovieList = (props) => {
 
 
 
-let displayedResults = ''
+let displayedResults = []
 
 if (props.movie) {
 
-   displayedResults = props.movie.map((item) => {
+  displayedResults = props.movie.map((item) => {
         return (
         <div>
         <li><Link to={'/' + item.id}><img src={item.image}/></Link></li>
@@ -20,6 +20,8 @@ if (props.movie) {
     ) 
 
 }
+console.log(displayedResults)
+console.log(props.movie)
 
 //item.id is being used as a param to link to the data. It doesn't have to be that particular name, but best practice is to link it to the first key in the data. 
 
@@ -35,8 +37,7 @@ if (props.movie) {
 
 return (
     <>
-        <h1>Cinema on Tap</h1>
-        <h2>Upcoming New Releases</h2>
+        <h2>Coming Soon to Theaters</h2>
         {displayedResults}
         
        

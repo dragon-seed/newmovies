@@ -1,13 +1,13 @@
 import { isCompositeComponent } from 'react-dom/test-utils'
 import Genre from './Genre'
-import Drama from './Drama'
-import React, {useState, useEffect} from 'react'
+// import React, {useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
+import { genreText } from './textHelper'
+
 
 
 
 const GenreList = (props) => {
-
 
 
 return (
@@ -16,6 +16,7 @@ return (
     <li><Link to={'/adventure'}>Adventure</Link></li>
     <li><Link to={'/animation'}>Animation</Link></li>
     <li><Link to={'/comedy'}>Comedy</Link></li>
+    <li><Link to={'/crime'}>Crime</Link></li>
     <li><Link to={'/documentary'}>Documentary</Link></li>
     <li><Link to={'/drama'}>Drama</Link></li>
     <li><Link to={'/history'}>History</Link></li>
@@ -25,6 +26,7 @@ return (
     <li><Link to={'/scifi'}>Sci-Fi</Link></li>
     <li><Link to={'/thriller'}>Thriller</Link></li>
     <li><Link to={'/war'}>War</Link></li>
+   
 </div>
     
 )
